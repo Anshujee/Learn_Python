@@ -1,1 +1,1 @@
-Learn Basic Concept Of Python Day by Day with pactical Example. 
+Learn Basic Concept Of Python Day by Day with practical Example. 
