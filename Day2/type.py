@@ -40,3 +40,7 @@ print(type(my_dict))  # Output: <class 'dict'>
 status = True
 print(type(status))  # Output: <class 'bool'>
 
+# The type() function is a simple yet powerful tool in Python. 
+# Whether you're writing DevOps automation scripts, testing APIs, 
+# or debugging applications, type() helps ensure data correctness and prevents 
+# unexpected errors.
