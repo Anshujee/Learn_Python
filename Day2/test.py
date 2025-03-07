@@ -102,3 +102,30 @@ print (config)
 # A set is like a list, but stores only unique values.
 unique_ips = {"192.168.1.1", "192.168.1.2", "192.168.1.3"}
 print (unique_ips)
+
+# Python Core Questions
+# 1️⃣ What are Python's built-in data types?
+# Python provides several built-in data types, including:
+
+# Numeric Types: int, float, complex
+# Sequence Types: list, tuple, range
+# Text Type: str
+# Set Types: set, frozenset
+# Mapping Type: dict
+# Boolean Type: bool
+# Binary Types: bytes, bytearray, memoryview
+# None Type: NoneType
+# How do you check the type of a variable in Python?
+x = 10
+print(type(x))  # Output: <class 'int'>
+
+# 5️⃣ What is the difference between is and == in Python?
+
+# ==	Compares values (checks if values are equal)
+# is	Compares memory addresses (checks if objects are the same instance
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a == b)  # True (values are same)
+print(a is b)  # False (different memory locations)
