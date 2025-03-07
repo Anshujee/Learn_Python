@@ -231,11 +231,12 @@ try:
 except ValidationError as e:
     print("JSON validation failed:", e)
 
-Real-time IT Case Scenario:
+# Real-time IT Case Scenario:
 
 # Validating AWS/Azure API responses before automation scripts execute 
 # actions.
 # Ensuring compliance with expected infrastructure configurations.
+
 
 
 
