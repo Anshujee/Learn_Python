@@ -129,3 +129,113 @@ b = [1, 2, 3]
 
 print(a == b)  # True (values are same)
 print(a is b)  # False (different memory locations)
+
+# Real-time Example in DevOps:
+
+# ==: Comparing file contents (file1_contents == file2_contents).
+# is: Checking if two objects point to the same log stream instance (log_stream1 is log_stream2).
+
+# DevOps Python Questions
+# 6️⃣ How are Python dictionaries used in DevOps automation?
+
+# 📌 Real-time IT Scenario:
+# Python dictionaries (dict) store key-value pairs and are 
+# widely used in DevOps automation, such as:
+# Managing AWS EC2 Instances
+ec2_instances = {
+    "instance_1": {"id": "i-12345", "state": "running"},
+    "instance_2": {"id": "i-67890", "state": "stopped"},
+}
+print(ec2_instances["instance_1"]["state"])  # Output: running
+
+# 7️⃣ What data types are best for handling infrastructure configurations?
+
+# Dictionaries (dict) → Store key-value infrastructure details.
+# Lists (list) → Store multiple configurations (e.g., list of IPs).
+# JSON (json) → Store structured configuration data in cloud APIs.
+# 📌 Example: Managing AWS EC2 instances in JSON format.
+import json
+
+config_data = {
+    "Region": "us-east-1",
+    "InstanceType": "t2.micro",
+    "SecurityGroups": ["sg-12345", "sg-67890"]
+}
+
+print(json.dumps(config_data, indent=4))  # Pretty-printed JSON
+
+# 8️⃣ How would you handle a list of log file paths in Python?
+
+# 📌 Scenario: Automating log analysis from multiple servers.
+
+log_files = ["/var/log/syslog", "/var/log/nginx/access.log", "/var/log/nginx/error.log"]
+
+for log in log_files:
+    with open(log, "r") as f:
+        print(f"Reading {log}...")
+        print(f.readlines()[:5])  # Print first 5 lines
+# Used in log rotation, log aggregation, and log parsing.
+
+# 9️⃣ What is the best way to remove duplicates 
+# from a log file in Python?
+
+# 📌 Scenario: A log file contains duplicate entries due 
+# to repeated cron job execution.
+
+# Solution: Use a set to remove duplicates.
+log_file = "server_logs.txt"
+
+with open(log_file, "r") as f:
+    unique_logs = set(f.readlines())  # Remove duplicates
+
+with open("cleaned_logs.txt", "w") as f:
+    f.writelines(unique_logs)  # Write back unique logs
+
+# Advantage: Faster and memory-efficient than looping over logs manually.
+
+# 🔟 How do you validate JSON data types in an API response 
+# using Python?
+# Scenario: Validating an API response from a cloud service 
+# (e.g., AWS, Azure).
+
+# Solution: Use the jsonschema library.
+
+import json
+from jsonschema import validate, ValidationError
+
+# Expected JSON Schema
+schema = {
+    "type": "object",
+    "properties": {
+        "instance_id": {"type": "string"},
+        "status": {"type": "string"},
+        "cpu_usage": {"type": "number"}
+    },
+    "required": ["instance_id", "status", "cpu_usage"]
+}
+
+# Sample API Response
+api_response = '''{
+    "instance_id": "i-12345",
+    "status": "running",
+    "cpu_usage": 75.5
+}'''
+
+# Convert JSON string to dictionary
+data = json.loads(api_response)
+
+# Validate JSON
+try:
+    validate(instance=data, schema=schema)
+    print("JSON is valid")
+except ValidationError as e:
+    print("JSON validation failed:", e)
+
+Real-time IT Case Scenario:
+
+# Validating AWS/Azure API responses before automation scripts execute 
+# actions.
+# Ensuring compliance with expected infrastructure configurations.
+
+
+
