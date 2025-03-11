@@ -40,7 +40,7 @@ print(z)
 # ✔ Used in machine learning and simulations (complex numbers).
 
 
-# Sequence Data Type :
+# Sequence Data Type : (String, List, Tuple)
 # 2️⃣ Strings (str) - Text Data
 # A string is just a sequence of characters (letters, numbers, symbols).
 # Strings must be enclosed in quotes.
@@ -81,14 +81,14 @@ print (coordinates,colors)
 # ✔ Storing fixed data like GPS coordinates, months of the year.
 # ✔ Performance optimization - tuples are faster than lists.
 
-#  Boolean Data Type :
+#  Boolean Data Type : (True or False)
 # 3️⃣ Boolean (bool) - True or False
 # Booleans represent only two values: True or False.
 # Real-world Use Cases:
 # ✔ Checking login authentication (is_authenticated = True).
 # ✔ Feature flagging in software development (feature_enabled = False).
 
-# Mapping Data Type :
+# Mapping Data Type : dictionary 
 # 6️⃣ Dictionary (dict) - Key-Value Pairs
 # A dictionary stores data in key: value pairs.
 user = {"name": "Anshu", "role": "DevOps Engineer", "location": "Pune"}
@@ -104,13 +104,13 @@ print (config)
 # ✔ Storing configuration settings in DevOps.
 # ✔ Processing JSON data from APIs.
 
-# Set Data Types:
+# Set Data Types: (Set and Forzen Set)
 # 7️⃣ Sets (set) - Unordered Unique Collection
 # A set is like a list, but stores only unique values.
 unique_ips = {"192.168.1.1", "192.168.1.2", "192.168.1.3"}
 print (unique_ips)
 
-# Binary Data Types:
+# Binary Data Types: (bytes and bytearray)
 
 # bytes: Represents immutable sequences of bytes. Example: data = b'Hello'
 # bytearray: Represents mutable sequences of bytes. Example: data = bytearray(b'Hello')
