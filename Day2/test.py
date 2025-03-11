@@ -16,6 +16,8 @@ user_salary = 85000.50
 print(f"User {user_name} is {user_age} years old and earns {user_salary}.")
 
 # Types of Data in Python
+
+# Numeric Data Type :
 # 1️⃣ Numbers (int, float, complex)
 # These are used to store numerical values.
 
@@ -37,6 +39,8 @@ print(z)
 # ✔ Working with prices, discounts, and scientific calculations (floats).
 # ✔ Used in machine learning and simulations (complex numbers).
 
+
+# Sequence Data Type :
 # 2️⃣ Strings (str) - Text Data
 # A string is just a sequence of characters (letters, numbers, symbols).
 # Strings must be enclosed in quotes.
@@ -51,12 +55,6 @@ print (name, message)
 file_path = "/home/user/data.txt"
 api_response = '{"status": "success"}'
 # print(file_path, api_response)
-
-# 3️⃣ Boolean (bool) - True or False
-# Booleans represent only two values: True or False.
-# Real-world Use Cases:
-# ✔ Checking login authentication (is_authenticated = True).
-# ✔ Feature flagging in software development (feature_enabled = False).
 
 
 # 4️⃣ Lists (list) - Ordered Collection
@@ -83,6 +81,14 @@ print (coordinates,colors)
 # ✔ Storing fixed data like GPS coordinates, months of the year.
 # ✔ Performance optimization - tuples are faster than lists.
 
+#  Boolean Data Type :
+# 3️⃣ Boolean (bool) - True or False
+# Booleans represent only two values: True or False.
+# Real-world Use Cases:
+# ✔ Checking login authentication (is_authenticated = True).
+# ✔ Feature flagging in software development (feature_enabled = False).
+
+# Mapping Data Type :
 # 6️⃣ Dictionary (dict) - Key-Value Pairs
 # A dictionary stores data in key: value pairs.
 user = {"name": "Anshu", "role": "DevOps Engineer", "location": "Pune"}
@@ -98,12 +104,27 @@ print (config)
 # ✔ Storing configuration settings in DevOps.
 # ✔ Processing JSON data from APIs.
 
+# Set Data Types:
 # 7️⃣ Sets (set) - Unordered Unique Collection
 # A set is like a list, but stores only unique values.
 unique_ips = {"192.168.1.1", "192.168.1.2", "192.168.1.3"}
 print (unique_ips)
 
+# Binary Data Types:
+
+# bytes: Represents immutable sequences of bytes. Example: data = b'Hello'
+# bytearray: Represents mutable sequences of bytes. Example: data = bytearray(b'Hello')
+
+# None Data Type:
+
+# NoneType: Represents the None object, which is used to indicate the absence of a value or a null value.
+
+# Custom Data Types:
+
+# You can also define your custom data types using classes and objects.
+
 # Python Core Questions
+
 # 1️⃣ What are Python's built-in data types?
 # Python provides several built-in data types, including:
 
