@@ -84,3 +84,14 @@
 # In DevOps, None can be used to check if certain environment variables are missing or not set.
 
 
+# Some Important Questions DevOps Engineer:
+
+# How do you automate deployment processes using Python?
+
+# Explain how you would use Python scripts to monitor system performance.
+
+# How do you manage configurations in a DevOps environment with Python?
+
+# Describe the use of Python in Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+
+# How do you use Python to interact with cloud services?
