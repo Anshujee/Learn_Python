@@ -18,3 +18,15 @@ name = "Samantha"
 print(x)
 
 print(name)
+
+# Dynamic Typing
+# Python variables are dynamically typed, meaning the same variable 
+# can hold different types of values during execution.
+# In Python, dynamic typing means that the type of a variable is determined 
+# at runtime, and you don’t need to explicitly declare the type. 
+# The same variable can hold different types of values throughout execution.
+
+x = 10
+x = "Now a string"
+print (x)
+print (x)
