@@ -87,9 +87,15 @@ print(type(bool))
 # These are those which are defined outside any function and which are 
 # accessible throughout the program, i.e., inside and outside of every function.
 x = "Anshu" # Global Variable 
-def function():
-    print ("Print Inside Function",x)
-function()
+def function(): # Defining the Function
+    print ("Print Inside Function",x) # Print statment inside function 
+function() # Calling a function 
+
+print ("Print Outside Function",x)
+
+# So here in above example x is work as a global variable and is used in both 
+# Ouside and Inside the function. 
+
 
     
 
