@@ -78,5 +78,21 @@ print(type(li))
 print(type(d))     
 print(type(bool))
 
+# Scope of a Variable
+# There are two methods how we define scope of a variable in python 
+# which are local and global.
+
+# Global and Local Variables in Python
+# Global Variables
+# These are those which are defined outside any function and which are 
+# accessible throughout the program, i.e., inside and outside of every function.
+x = "Anshu" # Global Variable 
+def function():
+    print ("Print Inside Function",x)
+function()
+
+    
+
+
 
 
