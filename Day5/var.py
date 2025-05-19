@@ -175,7 +175,9 @@ def outer():
     return x
 
 print(outer())
-   
+
+
+###########################################################################
 # Real DevOps Use-Case Scenario
 # You're writing a Python script to automate EC2 instance creation using Boto3. 
 # You have multiple instance types based on environment (dev, test, prod). 
@@ -198,5 +200,5 @@ create_instance("dev")
 create_instance("test")
 create_instance("pro")
 
-
+##################################################################################
 
