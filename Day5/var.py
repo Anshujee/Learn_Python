@@ -137,6 +137,7 @@ function()
 #print (_z)
 # NameError: name '_z' is not defined. Did you mean: 'z'?
 
+######################################################################
 #Real World DevOps Example 
 aws_region= "us-east-1" # Global_Variable
 def create_ec2_instance():
@@ -153,7 +154,7 @@ def ec2_instance():
 instance_type = ec2_instance()
 print(f"Creating Instance in {aws_region} of type {instance_type}")
 
-
+######################################################################
 
 
 
