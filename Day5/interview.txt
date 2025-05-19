@@ -1,0 +1,95 @@
+Top Interview Questions: Local vs Global Variables in Python
+##############################################################################
+✅ 1. What is the difference between a local and a global variable in Python?
+Expected Answer:
+
+A global variable is defined outside all functions and is accessible throughout the program.
+
+A local variable is defined inside a function and can only be accessed within that function.
+###############################################################################
+✅ 2. Can a function modify a global variable? How?
+Expected Answer:
+Yes, using the global keyword:
+
+x = 10
+def modify():
+    global x
+    x = 20
+#######################################################################
+✅ 3. What happens if a local and global variable have the same name?
+Expected Answer:
+The local variable overrides the global variable within the function scope.
+
+x = 10
+def test():
+    x = 20
+    print(x)  # prints 20
+
+test()
+print(x)      # prints 10
+#########################################################################
+✅ 4. What is the global keyword in Python?
+Expected Answer:
+
+It tells Python to use the global version of a variable inside a function.
+
+Without global, assigning to a variable inside a function creates a new local variable.
+
+#############################################################################
+✅ 5. Can you read a global variable inside a function without declaring it global?
+Expected Answer:
+Yes, reading is allowed without global. But if you try to modify it, Python assumes it's a new local variable unless you declare it with global.
+############################################################################
+✅ 6. What is the nonlocal keyword? How is it different from global?
+Expected Answer:
+
+nonlocal is used inside nested functions.
+
+It allows you to modify a variable in the enclosing (non-global) scope.
+
+
+def outer():
+    x = 10
+    def inner():
+        nonlocal x
+        x = 20
+    inner()
+    print(x)  # prints 20
+
+#############################################################################    
+✅ 7. What will be the output of this code?
+
+x = 5
+def func():
+    x = 10
+    print(x)
+
+func()
+print(x)
+Expected Output:
+
+10
+5
+##########################################################################
+✅ 8. Can global variables be changed by multiple functions? Is it a good practice?
+Expected Answer:
+Yes, but it is not good practice. It can lead to bugs and unpredictable behavior in larger applications.
+##########################################################################
+✅ 9. How can you return a local variable from a function to use it globally?
+
+def func():
+    local_var = "Hello"
+    return local_var
+
+global_var = func()
+print(global_var)
+###########################################################################
+✅ 10. In DevOps scripting, why should we avoid using too many global variables?
+Expected Answer:
+
+Makes scripts harder to debug and maintain.
+
+In shared environments (CI/CD pipelines), globals may lead to conflicts or unintended overwrites.
+
+Using function parameters and return values is safer and more modular.
+#########################################################
