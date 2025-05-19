@@ -157,8 +157,46 @@ print(f"Creating Instance in {aws_region} of type {instance_type}")
 ######################################################################
 
 
+x = 10
+def test():
+    x = 20
+    print(x)
 
+test()
+print(x)
+
+ #####################################################
+def outer():
+    x = "hello"
+    def inner():
+        nonlocal x
+        x = "world"
+    inner()
+    return x
+
+print(outer())
+   
+# Real DevOps Use-Case Scenario
+# You're writing a Python script to automate EC2 instance creation using Boto3. 
+# You have multiple instance types based on environment (dev, test, prod). 
+# Use local and global variables properly.
+aws_region = "us-east-1"
+def create_instance(env):
+    if env == "dev":
+        instance_type = " t2.large"
+    elif env == "test":
+        instance_type = "t2.mini"
+    elif env == "pro":
+        instance_type = "t2.Xlarge"
+    else:
+        instance_type = "t2 micro"
+        
     
+    print (f" Creating EC2 instance in {aws_region} with instance type {instance_type}")
+
+create_instance("dev")
+create_instance("test")
+create_instance("pro")
 
 
 
