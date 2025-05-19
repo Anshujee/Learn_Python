@@ -127,15 +127,31 @@ function()
 # Can a local variable be used outside a function?
 # If we will try to use this local variable outside the function 
 # then let's see what will happen.
-def f():
-    h = "Ayan Verma"
-f()
-print (h)
+#def f():
+    #h = "Ayan Verma"
+#f()
+#print (h)
 # It will throw an error 
 # Traceback (most recent call last):
   #File "/Users/anshujee/Work/Python_Example/Python_Day_to_Day/Learn_Python/Day5/var.py", line 133, in <module>
 #print (_z)
 # NameError: name '_z' is not defined. Did you mean: 'z'?
+
+#Real World DevOps Example 
+aws_region= "us-east-1" # Global_Variable
+def create_ec2_instance():
+    instance_type = "t2.micro" #local Variable 
+    print (f"Creating Instance in {aws_region} of type {instance_type}")
+create_ec2_instance()
+
+# Alternet_way
+aws_region = "us-east-1"  # Global variable
+
+def ec2_instance():
+    return "t2.micro"  # Return value
+
+instance_type = ec2_instance()
+print(f"Creating Instance in {aws_region} of type {instance_type}")
 
 
 
