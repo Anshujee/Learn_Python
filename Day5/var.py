@@ -1,3 +1,4 @@
+#######################################################################
 # Python Variables
 # In Python, variables are used to store data that can be referenced 
 # and manipulated during program execution. A variable is essentially 
@@ -13,12 +14,13 @@ x = 5
 
 # Variable 'name' stores the string "Samantha"
 
-name = "Samantha"  
+name = "Anshu"  
 
 print(x)
 
 print(name)
 
+######################################################################
 # Dynamic Typing
 # Python variables are dynamically typed, meaning the same variable 
 # can hold different types of values during execution.
@@ -30,6 +32,9 @@ x = 10
 x = "Now a string"
 print (x)
 print (x)
+
+######################################################################
+
 # Multiple Assignments
 # Python allows multiple variables to be assigned values in a single line.
 a = b = c = 240588
@@ -39,6 +44,8 @@ print (a,b,c)
 # making the code concise and easier to read.
 x, y, z = 1, 2.5, "Anshu"
 print(x, y, z)
+
+#######################################################################
 
 # Type Casting a Variable
 # Type casting refers to the process of converting the value of one data type 
@@ -58,9 +65,12 @@ z = (str(age))
 print(z)
 a = float(z)
 print (a)
+
+#######################################################################
+
 # Getting the Type of Variable
 # In Python, we can determine the type of a variable using the type() function. 
-# This built-in function returns the type of the object passed to it.
+# This type() built-in function returns the type of the object passed to it.
 # Example Usage of type()
 # Define variables with different data types
 n = 42
@@ -77,6 +87,8 @@ print(type(s))
 print(type(li))     
 print(type(d))     
 print(type(bool))
+
+#######################################################################
 
 # Scope of a Variable
 # There are two methods how we define scope of a variable in python 
@@ -95,10 +107,41 @@ print ("Print Outside Function",x)
 
 # So here in above example x is work as a global variable and is used in both 
 # Ouside and Inside the function. 
+########################################################################
+
+# Local Variable 
+# Python local variables are those which are defined inside a function 
+# and their scope is limited to that function only.
+# Local variables in Python are those which are initialized inside a 
+# function and belong only to that particular function. 
+# It cannot be accessed anywhere outside the function.
+# Creating local variables in Python
+# Example  local Variable ---
+def function():
+    x = "Anshu"
+    y = "I am learning Python"
+    print(x)
+    print(y)
+function()
+#########################################################
+# Can a local variable be used outside a function?
+# If we will try to use this local variable outside the function 
+# then let's see what will happen.
+def f():
+    h = "Ayan Verma"
+f()
+print (h)
+# It will throw an error 
+# Traceback (most recent call last):
+  #File "/Users/anshujee/Work/Python_Example/Python_Day_to_Day/Learn_Python/Day5/var.py", line 133, in <module>
+#print (_z)
+# NameError: name '_z' is not defined. Did you mean: 'z'?
+
+
+
 
 
     
-
 
 
 
