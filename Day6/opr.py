@@ -143,3 +143,25 @@ print(a << 2)
 # print(a << 2) → Left Shift by 2
 # Shifts bits of a left by 2 positions:
 # a = 1010 → becomes 101000 → 40 hus Output is 40. 
+
+###################################################################
+# Assignment Operators in Python
+# Python Assignment operators are used to assign values to the variables. 
+# This operator is used to assign the value of the right side of the 
+# expression to the left side operand.
+a = 10
+b = a
+print(b)
+b += a
+print(b)
+b -= a
+print(b)
+b *= a
+print(b)
+b <<= a # <<= is a bitwise left shift and assignment operator.
+        # It  shifts the bits of b to the left by a positions 
+        # and assigns the result back to b.
+
+
+print(b)
+
