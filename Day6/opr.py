@@ -161,7 +161,41 @@ print(b)
 b <<= a # <<= is a bitwise left shift and assignment operator.
         # It  shifts the bits of b to the left by a positions 
         # and assigns the result back to b.
-
-
 print(b)
+#################################################################
+# Identity Operators in Python
+# In Python, is and is not are the identity operators both are used to 
+# check if two values are located on the same part of the memory. 
+# Two variables that are equal do not imply that they are identical. 
+# is          True if the operands are identical 
+# is not      True if the operands are not identical 
 
+a = 10
+b = 20
+c = a
+
+print(a is not b)
+print(a is c)
+
+#########################################################################
+# Membership Operators in Python
+# n Python, in and not in are the membership operators that are used to test 
+# whether a value or variable is in a sequence.
+
+# in            True if value is found in the sequence
+# not in        True if value is not found in the sequence
+
+x = 24
+y = 20
+list = [10, 20, 30, 40, 50]
+
+if (x not in list):
+    print("x is NOT present in given list")
+else:
+    print("x is present in given list")
+
+if (y in list):
+    print("y is present in given list")
+else:
+    print("y is NOT present in given list")
+#####################################################################
