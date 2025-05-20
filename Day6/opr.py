@@ -76,3 +76,70 @@ b = False
 print(a and b)
 print(a or b)
 print(not a)
+
+###################################################################
+# Bitwise Operators in Python
+#  Python Bitwise operators act on bits and perform bit-by-bit operations. 
+# These are used to operate on binary numbers.
+
+# Bitwise Operators in Python are as follows:
+
+# 1.Bitwise NOT
+# 2.Bitwise Shift
+# 3.Bitwise AND
+# 4.Bitwise XOR
+# 5.Bitwise OR
+
+a = 10
+b = 4
+
+print(a & b) 
+print(a | b)
+print(~a)
+print(a ^ b)
+print(a >> 2)
+print(a << 2)
+
+#Output
+#0
+# Explanation print(a & b) → Bitwise AND
+# a = 1010
+# b = 0100
+# ----------
+# a & b = 0000 → 0 # Thus Output is 0 .
+##############################################
+# Output
+#14 
+# Explanation print(a | b) → Bitwise OR
+# a = 1010
+# b = 0100
+#----------
+# a | b = 1110 → 14 Thus Output is 14 . 
+################################################
+#output
+# -11  
+# print(~a) → Bitwise NOT
+# Bitwise NOT flips all bits.
+# In Python, this works on signed integers using two's complement.
+# a = 10
+# ~a = -11 Thus Output is -11. 
+##############################################################
+# Output 
+#14
+# print(a ^ b) → Bitwise XOR
+# a = 1010
+# b = 0100
+# ----------
+# a ^ b = 1110 → 14 Thus Output is 14 . 
+##########################################################
+# Output 
+#2
+# print(a >> 2) → Right Shift by 2
+# Shifts bits of a right by 2 positions:
+# a = 1010 → becomes 0010 → 2 Thus Output is 2.
+###########################################################
+#Output
+#40
+# print(a << 2) → Left Shift by 2
+# Shifts bits of a left by 2 positions:
+# a = 1010 → becomes 101000 → 40 hus Output is 40. 
