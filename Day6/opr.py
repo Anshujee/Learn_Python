@@ -61,3 +61,18 @@ print(a != b)
 print(a >= b)
 print(a <= b)
 
+###############################################################
+#   Logical Operators in Python
+# Python Logical operators perform Logical AND, Logical OR and Logical NOT operations. 
+# It is used to combine conditional statements.
+# The precedence of Logical Operators in Python is as follows:
+
+# 1 . Logical not
+# 2.  Logical and
+# 3.  Logical or
+# Example 3 --- 
+a = True
+b = False
+print(a and b)
+print(a or b)
+print(not a)
