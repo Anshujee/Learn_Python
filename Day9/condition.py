@@ -59,6 +59,8 @@ if age >= 18:
 # A nested if...else allows you to check multiple levels of conditions. 
 # This is useful when decisions depend on more than one condition or hierarchy 
 # of checks.
+
+######################################################################
 # Example nested if -else
 age = 55
 is_member = True
@@ -70,6 +72,18 @@ if is_member:
  
 else:
     print ("Not eligible for a senior discount.")
+
+#########################################################################
+# Ternary Conditional Statement in Python
+# A ternary conditional statement is a compact way to write an if-else condition 
+# in a single line. 
+# It’s sometimes called a "conditional expression."
+# Assign a value based on a condition
+# Example -1 
+age = 17
+s = "Adult" if age >= 18 else "Minor"
+
+print(s)
  
 
 
