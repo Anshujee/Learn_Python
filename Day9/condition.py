@@ -15,6 +15,7 @@
 # if-elif-else	                  Checks multiple conditions in sequence
 # Nested if	                      if inside another if
 
+################################################################################
 # If Conditional Statement in Python
 # Ex - 1 
 age = 20 
@@ -29,6 +30,8 @@ if age >= 18:
     else:
         print("Not Eligiable for travle")
 
+
+###############################################################################
         # Example of elif Statement in Python
 
     age = 6
@@ -43,6 +46,33 @@ if age >= 18:
         print ("adult")
     else:
         print ("Oldage")
+##########################################################################
+
+# Nested if..else Conditional Statements in Python
+
+# Nested if..else means an if-else statement inside another if statement. 
+# We can use nested if statements to check conditions within conditions.
+# A nested if...else is when an if or else block contains another if...else 
+# statement inside it.
+
+# 📘 Definition:
+# A nested if...else allows you to check multiple levels of conditions. 
+# This is useful when decisions depend on more than one condition or hierarchy 
+# of checks.
+# Example nested if -else
+age = 55
+is_member = True
+if is_member:
+ if age >= 65:
+    print ("Eligible for Discount of 30 %")
+ else:
+     print ("Eligible for discount of 20%")
+ 
+else:
+    print ("Not eligible for a senior discount.")
+ 
+
+
 
 
 
