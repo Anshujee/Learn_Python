@@ -22,20 +22,22 @@ if age >= 18:
     print ("Eligible for vote ")
 
     # If else Conditional Statements in Python
-    my_age = 10
+    my_age = 12
+
     if my_age >= 12:
         print("Eligable for Travle ")
     else:
         print("Not Eligiable for travle")
 
-        # elif Statement
+        # Example of elif Statement in Python
 
-    age = 38
-    if age <= 5:
+    age = 6
+
+    if 0 <= age <= 5:
         print ("infant")
-    elif age <= 6:
+    elif  6 <= age <= 14:
         print ("Child")
-    elif age <= 15:
+    elif 15 <= age <= 24:
         print ("Teenage")
     elif age <= 25 :
         print ("adult")
