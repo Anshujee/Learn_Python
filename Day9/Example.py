@@ -32,7 +32,8 @@ else:
 
 #############################################################################
 # Example -3 
-# Given two integer variables a and b, and a boolean variable flag. The task is to check the status and return accordingly.
+# Given two integer variables a and b, and a boolean variable flag. 
+# The task is to check the status and return accordingly.
 
 # Return True for the following cases:
 
@@ -54,6 +55,21 @@ print(check_status(-5, 6, False))    # ➜ True
 print(check_status(5, 6, False))     # ➜ False (both non-negative, flag is False)
 print(check_status(-5, 6, True))     # ➜ False (flag is True but both not negative)
 
+#################################################################################
+# Question
+# You are given a string str, you need to return True if  the words 
+# "cat" and "hat"
+#  appear same number of times in str, otherwise return False.
 
+def cat_hat_equal(str):
+    cat_count = str.count("cat")
+    hat_count= str.count("hat")
+    return cat_count == hat_count
+print(cat_hat_equal("cat and hat"))
+print (cat_hat_equal('cat are cat not hat'))
+print (cat_hat_equal("hat is hat not cat "))
+
+ 
+    
 
 
