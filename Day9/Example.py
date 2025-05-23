@@ -56,20 +56,53 @@ print(check_status(5, 6, False))     # ➜ False (both non-negative, flag is Fal
 print(check_status(-5, 6, True))     # ➜ False (flag is True but both not negative)
 
 #################################################################################
-# Question
+# Example 4 
+# Question 
 # You are given a string str, you need to return True if  the words 
 # "cat" and "hat"
 #  appear same number of times in str, otherwise return False.
 
-def cat_hat_equal(str):
-    cat_count = str.count("cat")
-    hat_count= str.count("hat")
-    return cat_count == hat_count
-print(cat_hat_equal("cat and hat"))
-print (cat_hat_equal('cat are cat not hat'))
-print (cat_hat_equal("hat is hat not cat "))
+def cat_hat_equal(str): # Define Function
+    cat_count = str.count("cat") # Count the number of times "cat" appears
+    hat_count= str.count("hat") # Count the number of times "Hat" appears
+    return cat_count == hat_count # Return True if both counts are equal, otherwise False
+print(cat_hat_equal("cat and hat"))   # Output True  
+print (cat_hat_equal('cat are cat not hat')) #Output False
+print (cat_hat_equal("hat is hat not cat ")) # Output False
 
- 
-    
+#################################################################################
+# Example 5
+# Question--- Given an integer a, you have to use the if statement to print 
+# "Big" (without quotes) if the given number is greater than 100, and use the 
+# else statement to print "Number" (without quotes) when the number is smaller 
+# than or equal to 100.
+# Note: After printing the output, you should move the cursor to the new line.
+
+x = int(input("Print a Number : "))
+if x >= 100:
+    print ("Big")
+else:
+    print ("Number")
+#######################################################################
+# Example - 6
+# Question ---
+# You are given a number a and you have to print your answer according to 
+# the following:
+
+# If the number is divisible by 3, you print "Fizz" (without quotes)
+# If the number is divisible by 5, you print "Buzz" (without quotes)
+# If the number is divisible by both 3 and 5, you print "FizzBuzz" (without quotes)
+# In any other case, you print the number itself
+# Note: You should add a new-line character after print statement.   
+# 
+a = int(input("Please provide a Number : "))
+if a%3 == 0 and a%5 == 0:
+    print ("FizzBuzz")
+elif a%3 == 0:
+    print("Buzz")
+elif a%5 == 0:
+    print ('Fizz')
+else:
+    print (a)
 
 
