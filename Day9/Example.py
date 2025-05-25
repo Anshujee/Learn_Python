@@ -128,3 +128,30 @@ if m % 2 == 1:
     print ("odd")
 else:
     print("Even")
+
+########################################################################
+# Ex - 9 
+# Given three numbers a, b, and c. 
+# You need to find which is the greatest of them all.
+a = int(input("Enter a number A =  "))
+b = int(input("Enter a number B = "))
+c = int(input("Enter the number C = "))
+
+if a>=b and a>=c:
+    print ("A is greater then B and C ")
+elif b >= a and b >= c:
+    print ("B is greater then A and C ")
+else:
+    print ("C is Greater ")
+
+ ####################################################################
+#  Ex - 10 
+# Given an integer year. Print "True" (without quotes) if it can represent
+# a leap year, otherwise print "False" (without quotes). 
+year = int(input("Enter a year you want = "))
+if year % 2 ==0:
+    print ("Leap Year True: ")
+else:
+    print ("Non - Leap Years False ")
+
+
