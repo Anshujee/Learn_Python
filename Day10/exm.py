@@ -60,4 +60,45 @@ face = int (input("Enter the face number (1 to 6): "))
 result = dice_prob(face)
 print("The number on the opposite face is:", result)
 
+##############################################################################
+# Define a Point class to store x and y coordinates
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+# Function to check if two rectangles overlap
+def is_overlapping(L1, R1, L2, R2):
+    # If one rectangle is to the left of the other
+    if (R1.x < L2.x or R2.x < L1.x):
+        return False
+
+    # If one rectangle is above the other
+    if (R1.y > L2.y or R2.y > L1.y):
+        return False
+
+    return True
+
+# Example usage
+L1 = Point(0, 10)  # Top-left corner of rectangle 1
+R1 = Point(10, 0)  # Bottom-right corner of rectangle 1
+
+L2 = Point(5, 5)   # Top-left corner of rectangle 2
+R2 = Point(15, 0)  # Bottom-right corner of rectangle 2
+
+if is_overlapping(L1, R1, L2, R2):
+    print("Rectangles Overlap")
+else:
+    print("Rectangles Do Not Overlap")
+
+################################################################
+# Ex - 6
+# Given a tuple arr , print "True" if all elements of tuple
+#  are different otherwise print "False".
+arr = (1,2,3,4,5)
+if len (arr) == len (set(arr)):
+    print ("True")
+else:
+    print("False")
+    
     
