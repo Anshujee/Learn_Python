@@ -52,7 +52,10 @@ for status in server:
         continue
     print("Sever need to update : ", status)
 
-    
+    ########################################################################
+
+    # else – Runs when loop completes normally (no break)
+    # The else block after a for loop runs only if the loop wasn't broken with break.
 
 
               
