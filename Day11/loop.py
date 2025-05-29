@@ -13,7 +13,10 @@
 
 # The indented block under for runs for each item in the sequence.
 
+
+#############################################################################
 # Example 1: Looping through a list of DevOps tools
+
 tools = ["linux","AWS","AZURE","Docker","Kubernetes","Terraform",
          "Networking","Git","Ansebel"]
 for tool in tools:
@@ -57,7 +60,45 @@ for status in server:
     # else – Runs when loop completes normally (no break)
     # The else block after a for loop runs only if the loop wasn't broken with break.
 
+# Example: Searching for a server with issue
 
-              
+servers = ["up", "up", "up"]
 
+for status in servers:
+    if status == "down":
+        print("Found a server down.")
+        break
+else:
+    print("All servers are running fine!")
 
+#########################################################################
+                   # While Loop in Python #
+# In Python, a while loop is used to execute a block of statements repeatedly 
+# until a given condition is satisfied. 
+# A while loop repeatedly runs a block of code as long as the condition is True.
+# Syntax:
+# while condition:
+    # code block
+# Example -1
+count = 1
+while count <= 5:
+    print("Count is:", count)
+    count += 1
+
+# Example -2 
+cnt = 0
+while cnt < 3:
+    cnt = cnt + 1
+    print ("Hello Anshu")
+
+########################################################################
+# While with else 
+ct = 0 
+while ct < 2:
+    ct = ct + 1
+    print ("Hello Anshu how are you ")
+else:
+    print ("Try more hard and with focus")
+
+ ############################################################################
+    
