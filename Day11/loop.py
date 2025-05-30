@@ -120,3 +120,32 @@ while True:
         if num == 3:
             continue
         print ("Number Is : ", num)
+
+ ############################################################################
+                #   Nested Loops in Python
+# A nested loop is simply a loop inside another loop. 
+# Python programming language allows to use one loop inside another loop 
+# which is called nested loop.     
+# Syntax
+# for outer in range(n):
+    # for inner in range(m):
+        # Code block to execute
+# Or with while loops:
+# while condition1:
+    # while condition2:
+        # Code block
+############################################################################
+
+# Example - 1 
+
+for i in range (4):
+    for j in range (5):
+        print ("Anshu", end= " ")
+    print()
+###########################################################################
+# Example 2: Multiplication table (1 to 3)
+for t in range (1,11):
+    for b in range (1,6):
+        print(t * b , end= " \t")
+    print()
+###########################################################################
