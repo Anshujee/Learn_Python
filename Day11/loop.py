@@ -71,14 +71,17 @@ for status in servers:
 else:
     print("All servers are running fine!")
 
-#########################################################################
+################################################################################
                    # While Loop in Python #
 # In Python, a while loop is used to execute a block of statements repeatedly 
 # until a given condition is satisfied. 
 # A while loop repeatedly runs a block of code as long as the condition is True.
+
+################################################################################
 # Syntax:
 # while condition:
     # code block
+ ##############################################################################   
 # Example -1
 count = 1
 while count <= 5:
@@ -91,7 +94,7 @@ while cnt < 3:
     cnt = cnt + 1
     print ("Hello Anshu")
 
-########################################################################
+###############################################################################
 # While with else 
 ct = 0 
 while ct < 2:
@@ -101,4 +104,19 @@ else:
     print ("Try more hard and with focus")
 
  ############################################################################
-    
+
+# Example 2: Using break to stop loop early
+co = 0
+while True:
+    co = co + 1
+    print ("Loop is Running", co)
+    if co == 2:
+        break
+ ###########################################################################
+    # Example 3: Using continue to skip iteration
+    num = 0 
+    while num < 5 :
+        num = num + 1
+        if num == 3:
+            continue
+        print ("Number Is : ", num)
