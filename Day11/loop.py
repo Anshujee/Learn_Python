@@ -24,6 +24,7 @@ for tool in tools:
     
 ########################################################################
 # Example 2: Looping through a range of numbers
+
 for i in range (5):
     print (i)
 
@@ -33,6 +34,7 @@ for i in range (5):
 
 # break – Exit the loop early
 # Use break when you want to stop the loop as soon as a condition is met.
+
 # Example: Stop scanning servers if one is down
 
     server = ["UP", "UP", "Down","UP"]
@@ -134,6 +136,8 @@ while True:
 # while condition1:
     # while condition2:
         # Code block
+
+# Example -1 
 
     colour = [ "red", "green", "yellow"]
     fruits = ["apple", "banana", "pears"]
