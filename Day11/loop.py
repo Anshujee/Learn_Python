@@ -134,6 +134,15 @@ while True:
 # while condition1:
     # while condition2:
         # Code block
+
+    colour = [ "red", "green", "yellow"]
+    fruits = ["apple", "banana", "pears"]
+
+    for c in colour:
+        for f in fruits:
+            print (c ,f )
+
+    
 ############################################################################
 
 # Example - 1 
@@ -151,3 +160,9 @@ for t in range (1,11):
 ###########################################################################
 # Example - 3 
 
+# Else in For Loop
+for x in range (5):
+    print (x)
+else:
+    print ("complete")
+###########################################################################
