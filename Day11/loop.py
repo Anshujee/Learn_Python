@@ -131,7 +131,9 @@ while True:
                 #   Nested Loops in Python
 # A nested loop is simply a loop inside another loop. 
 # Python programming language allows to use one loop inside another loop 
-# which is called nested loop.     
+# which is called nested loop. 
+# ###########################################################################
+   
 # Syntax
 # for outer in range(n):
     # for inner in range(m):
@@ -140,7 +142,7 @@ while True:
 # while condition1:
     # while condition2:
         # Code block
-
+########################################################################
 # Example -1 
 
     colour = [ "red", "green", "yellow"]
