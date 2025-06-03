@@ -1,12 +1,16 @@
 # Loops in Python - For, While and Nested Loops
+##########################################################################
 # For loop
 # A for loop in Python is used to iterate (loop) over a sequence like a list,
 # tuple, string, or range of numbers. It allows you to repeat a block of code 
 # for each item in that sequence.
+#############################################################################
+
 # Basic Syntax:
 
 # for variable in sequence:
     # code block to execute
+
 # variable – A name used to represent the current element in the sequence.
 
 # sequence – Any iterable object (e.g., list, string, range, tuple).
