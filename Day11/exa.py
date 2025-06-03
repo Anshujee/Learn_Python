@@ -35,3 +35,4 @@ while True :
 T = int (input ( "Enter a number : - "))
 for t in range (1 , 11):
     print (t * i, end= " ")
+###################################################################
