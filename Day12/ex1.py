@@ -58,3 +58,39 @@ if n1 <= n2:
 else:
     result_diff = difference_of_tables(n1, n2)
     print(f"The differences between the multiplication tables of {n1} and {n2} are: {result_diff}")
+
+  ################################################################################
+#   Example -4
+# Given an integer n,  write a program to print the square wall of size n using nested loops. Try not to use String multiplication.
+def print_square_wall(n):
+    """
+    Print a square wall of size n using nested loops.
+    
+    :param n: The size of the square wall.
+    """
+    for i in range(n):
+        for j in range(n):
+            print("*", end=" ")
+        print()  # Move to the next line after each row
+n_square = int(input("Enter the size of the square wall: "))
+print_square_wall(n_square)
+################################################################################
+# Example -5
+# Given an integer n. Write a program to print the Right angle triangle wall. 
+# The length of perpendicular and base is n.  
+# Use single loop and string multiplication.
+
+# Note: Print exactly single " " after "*". 
+# Print a new line after printing the triangle.
+def print_right_angle_triangle(n):
+    """
+    Print a right angle triangle of size n using string multiplication.
+    
+    :param n: The height of the triangle.
+    """
+    for i in range(1, n + 1):
+        print("* " * i)  # Print i stars followed by a space
+n_triangle = int(input("Enter the height of the right angle triangle: "))
+print_right_angle_triangle(n_triangle)
+################################################################################
+
