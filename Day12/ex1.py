@@ -142,4 +142,25 @@ n_fibonacci = int(input("Enter a non-negative integer to find its Fibonacci numb
 result_fibonacci = fibonacci(n_fibonacci)
 print(f"The {n_fibonacci}th Fibonacci number is: {result_fibonacci}")
 ##################################################################################
+# Example -11
+# For a given number N, find whether it is a factorial number or not. 
+# A Factorial number is a number which is equal to the factorial value of other numbers.
+def is_factorial_number(n):
+    
+    if n < 0:
+        return False
+    factorial = 1
+    i = 1
+    while factorial < n:
+        i += 1
+        factorial *= i
+    return factorial == n
+n_factorial_check = int(input("Enter a number to check if it is a factorial number: "))
+result_factorial_check = is_factorial_number(n_factorial_check)
+if result_factorial_check:
+    print(f"{n_factorial_check} is a factorial number.")
+else:
+    print(f"{n_factorial_check} is not a factorial number.")
+##################################################################################
+
 
