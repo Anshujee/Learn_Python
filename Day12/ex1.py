@@ -93,4 +93,23 @@ def print_right_angle_triangle(n):
 n_triangle = int(input("Enter the height of the right angle triangle: "))
 print_right_angle_triangle(n_triangle)
 ################################################################################
+# Example -6
+# Given an integer n. Write a program to print the Right angle triangle. 
+# The length of the perpendicular and base is n.  
+# Use nested loops and string multiplication.   
+def print_right_angle_triangle_nested(n):
+    """
+    Print a right angle triangle of size n using nested loops.
+    
+    :param n: The height of the triangle.
+    """
+    for i in range(1, n + 1):
+        for j in range(i):
+            print("*", end=" ")
+        print()  # Move to the next line after each row
+n_triangle_nested = int(input("Enter the height of the right angle triangle (nested): "))
+print_right_angle_triangle_nested(n_triangle_nested)
+##################################################################################
+
+
 
