@@ -15,7 +15,7 @@ n = int(input("Enter a natural number: "))
 result = sum_of_natural_numbers(n)
 print(f"The sum of the first {n} natural numbers is: {result}")
 
-
+############################################################################
 
 # Example -2
 # Same Problem with different approach using loop approch
@@ -35,6 +35,8 @@ def sum_of_natural_numbers_loop(n):
 n_loop = int(input("Enter a natural number for loop approach: "))
 result_loop = sum_of_natural_numbers_loop(n_loop)
 print(f"The sum of the first {n_loop} natural numbers using loop is: {result_loop}")
+
+#############################################################################
 
 # Example -3
 # Given two number n1 and n2, n1 > n2. Find the differences between mathematical tables of n1 and n2 and print in a single line.
@@ -60,6 +62,7 @@ else:
     print(f"The differences between the multiplication tables of {n1} and {n2} are: {result_diff}")
 
   ################################################################################
+
 #   Example -4
 # Given an integer n,  write a program to print the square wall of size n using nested loops. Try not to use String multiplication.
 def print_square_wall(n):
@@ -75,6 +78,7 @@ def print_square_wall(n):
 n_square = int(input("Enter the size of the square wall: "))
 print_square_wall(n_square)
 ################################################################################
+
 # Example -5
 # Given an integer n. Write a program to print the Right angle triangle wall. 
 # The length of perpendicular and base is n.  
@@ -93,6 +97,7 @@ def print_right_angle_triangle(n):
 n_triangle = int(input("Enter the height of the right angle triangle: "))
 print_right_angle_triangle(n_triangle)
 ################################################################################
+
 # Example -6
 # Given an integer n. Write a program to print the Right angle triangle. 
 # The length of the perpendicular and base is n.  
@@ -110,6 +115,18 @@ def print_right_angle_triangle_nested(n):
 n_triangle_nested = int(input("Enter the height of the right angle triangle (nested): "))
 print_right_angle_triangle_nested(n_triangle_nested)
 ##################################################################################
-
+# Example -7
+# Given an integer n. Write a program to print the inverted "Right angle triangle" wall. The length of the perpendicular and base is n.
+def print_inverted_right_angle_triangle(n):
+    """
+    Print an inverted right angle triangle of size n.
+    
+    :param n: The height of the triangle.
+    """
+    for i in range(n, 0, -1):
+        print("* " * i)  # Print i stars followed by a space
+n_inverted_triangle = int(input("Enter the height of the inverted right angle triangle: "))
+print_inverted_right_angle_triangle(n_inverted_triangle)
+##################################################################################
 
 
