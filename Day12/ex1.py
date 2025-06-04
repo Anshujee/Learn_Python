@@ -128,5 +128,64 @@ def print_inverted_right_angle_triangle(n):
 n_inverted_triangle = int(input("Enter the height of the inverted right angle triangle: "))
 print_inverted_right_angle_triangle(n_inverted_triangle)
 ##################################################################################
-
+# Example -8
+# Given an integer n. Write a program to print all the divisors of n in a single line.
+def print_divisors(n):
+    """
+    Print all the divisors of n in a single line.
+    
+    :param n: The number to find divisors for.
+    """
+    divisors = []
+    for i in range(1, n + 1):
+        if n % i == 0:
+            divisors.append(i)
+    return divisors
+n_divisors = int(input("Enter a natural number to find its divisors: "))
+result_divisors = print_divisors(n_divisors)
+print(f"The divisors of {n_divisors} are: {result_divisors}")
+##################################################################################
+# Example -9
+# Given a positive integer, n. Find the factorial of n.
+def factorial(n):
+    """
+    Calculate the factorial of a positive integer n.
+    
+    :param n: The number to calculate the factorial for.
+    :return: The factorial of n.
+    """
+    if n < 0:
+        return "Factorial is not defined for negative numbers."
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+n_factorial = int(input("Enter a positive integer to find its factorial: "))
+result_factorial = factorial(n_factorial)
+print(f"The factorial of {n_factorial} is: {result_factorial}")
+##################################################################################
+# Example -10
+# Given a non-negative integer n, your task is to find the nth Fibonacci number.
+def fibonacci(n):
+    """
+    Calculate the nth Fibonacci number.
+    
+    :param n: The position in the Fibonacci sequence.
+    :return: The nth Fibonacci number.
+    """
+    if n < 0:
+        return "Fibonacci is not defined for negative numbers."
+    elif n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        a, b = 0, 1
+        for _ in range(2, n + 1):
+            a, b = b, a + b
+        return b
+n_fibonacci = int(input("Enter a non-negative integer to find its Fibonacci number: "))
+result_fibonacci = fibonacci(n_fibonacci)
+print(f"The {n_fibonacci}th Fibonacci number is: {result_fibonacci}")
+##################################################################################
 
