@@ -27,3 +27,10 @@ def greet(name):
     """Function to greet a person by name."""
     return f"Hello, {name}!"
 print(greet("Anshu"))  # Output: Hello, Anshu!
+################################################################################
+# Example -2 
+def add_num(a,b):
+    """Function to add two numbers."""
+    return a + b
+print(add_num(5,5))
+################################################################################
