@@ -86,5 +86,47 @@ def  introduce (name,age):
     return f"My name is {name} and I am {age} years old."  
 print(introduce(age=25, name="Anshu"))  # Output: My name is Anshu and I am 25 years old.
 #############################################################################################
+# Default Arguments: These are parameters that have a default value assigned to them. 
+# These argument can have default values, which are used if no value is provided when the function is called.
+# Example of Default Arguments:
+def greet(name="Guest"):
+#    """Function to greet a person with a default name."""
+  return f"Hello, {name}!"
+print(greet())  # Output: Hello, Guest! Here the default value "Guest" is used.
+print(greet("Anshu"))  # Output: Hello, Anshu! Here the argument "Anshu" is passed, overriding the default value.
+############################################################################################## 
+# Variable-length Arguments: These allow you to pass a variable number of arguments to a function.
+# They are defined using an asterisk (*) before the parameter name.
+def sum_all(*args):
+    """Function to sum all provided numbers."""
+    return sum(args)
+print(sum_all(1, 2, 3, 4, 5))  # Output: 15
+################################################################################################################
+# Keyword Variable-length Arguments: These allow you to pass a variable number of keyword arguments to a function.
+# They are defined using two asterisks (**) before the parameter name.
+def print_info(**kwargs):
+    """Function to print key-value pairs."""
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+print_info(name="Anshu", age=25, city="Pune")
 
-
+# Output:
+# name: Anshu
+# age: 25
+# city: Pune
+##############################################################################################
+# Return Values in Functions:
+# Functions can return values using the `return` statement.
+# The return statement allows you to send a value back to the caller of the function.
+def multiply(a, b):
+    """Function to multiply two numbers."""
+    return a * b
+print(multiply(4, 5))  # Output: 20
+##############################################################################################.
+# If a function does not have a return statement, it returns `None` by default.
+def no_return():
+    """Function without a return statement."""
+    print("This function does not return anything.")
+no_return()  # Output: This function does not return anything.
+# The function returns None implicitly.
+##############################################################################################
