@@ -53,4 +53,38 @@ print(subtract_num(10, 5))  # Output: 5
 # Example of lambda function to find the square of a number
 square = lambda x: x * x
 print(square(5))  # Output: 25
+################################################################################    
+############## Parameters and Arguments in Functions ##############################
+# Parameters are variables that are defined in the function signature,
+# while arguments are the actual values passed to the function when it is called.
+# Parameters allow you to pass data into functions, making them more flexible and reusable.
+
+# Basically, parameter are the variables listed inside the parentheses in the function definition,
+# they act as placeholders for the values that will be passed to the function when it is called.
+# In the above Example -1, `name` is a parameter of the `greet` function.
+####################################################################################################
+# Arguments are the actual values or data that you pass to the function when you call it.
+# In the above Example -1, `"Anshu"` is an argument passed to the `greet` function.
+# Arguments can be of any data type, including numbers, strings, lists, or even other functions.
+
+#################################################################################################
+######################## Types of Argument  ####################################################
+# Positional Arguments: These are the most common type of arguments,and must be passed in the same 
+# order as the parameters are defined in the function.
+# Example of Positional Arguments : 
+def add(a, b):
+    """Function to add two numbers."""
+    return a + b
+print(add(3, 5))  # Output: 8
 ################################################################################
+# Keyword Arguments: These arguments are passed by explicitly specifying the parameter name,
+# allowing you to pass them in any order.
+# These are agruments that are passed to a function by explicitly specifying the parameter name.
+# Example of Keyword Arguments:-
+def  introduce (name,age):
+    """Function to introduce a person by name and age."""
+    return f"My name is {name} and I am {age} years old."  
+print(introduce(age=25, name="Anshu"))  # Output: My name is Anshu and I am 25 years old.
+#############################################################################################
+
+
