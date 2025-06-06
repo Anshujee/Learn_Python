@@ -34,3 +34,23 @@ def add_num(a,b):
     return a + b
 print(add_num(5,5))
 ################################################################################
+# Types of Functions:
+# 1. Built-in Functions: These are functions that come with Python, 
+# such as `print()`, `len()`, ` sum() ` etc.
+# 2. User-defined Functions: These are functions defined by the user
+# to perform specific tasks, like the examples above.
+# 3. Lambda Functions: These are small anonymous functions defined using the
+#  `lambda` keyword.
+###############################################################################
+# Example -3
+# Create function to find the subtraction of two Numbers
+def subtract_num(a, b):
+    """Function to subtract two numbers."""
+    return a - b
+print(subtract_num(10, 5))  # Output: 5
+################################################################################
+# Example -4 La,mbda Function
+# Example of lambda function to find the square of a number
+square = lambda x: x * x
+print(square(5))  # Output: 25
+################################################################################
