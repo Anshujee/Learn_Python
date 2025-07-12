@@ -33,33 +33,21 @@ x = 100
 print(id(x))     # Memory address
 print(type(x))   # <class 'int'>
 2. 🔒 Immutable Object Behavior
-python
-Copy
-Edit
 a = 10
 b = 10
 Both a and b point to the same memory location.
 
 Why? Because Python reuses immutable objects to save memory (called interning).
-
-python
-Copy
-Edit
 print(id(a))  # e.g., 140734627083888
 print(id(b))  # Same as id(a)
-Now:
 
-python
-Copy
-Edit
+Now:
 a = 11  # Creates a new object
 print(id(a))  # Different from previous
+
 ✅ Immutable = New memory is allocated on change.
 
 3. 🪄 Mutable Object Behavior
-python
-Copy
-Edit
 x = [1, 2, 3]
 y = x
 x.append(4)
@@ -71,19 +59,20 @@ The change is reflected in both.
 ✅ Mutable = Modified in the same memory location.
 
 🧮 Memory Management in Python
+
 🔸 Reference Counting
+
 Python tracks how many variables refer to an object.
 
 When the count = 0, the object is deleted.
 
-python
-Copy
-Edit
 x = [1, 2]
 y = x
 del x
 del y  # Object is deleted from memory
+
 🔸 Garbage Collector
+
 Automatically clears memory of unused objects.
 
 Helps avoid memory leaks.
@@ -93,15 +82,14 @@ Operator	Checks if...
 ==	Values are the same
 is	Both variables point to same object
 
-python
-Copy
-Edit
 a = [1, 2]
 b = [1, 2]
 
 print(a == b)  # True  – same value
 print(a is b)  # False – different memory locations
+
 🔥 Real-World Analogy
+
 Type	Analogy
 Immutable	Like an Amazon Machine Image (AMI)
 Mutable	Like a Docker volume you can modify
@@ -120,7 +108,9 @@ Mutable:
 x = [1, 2] → memory: [[1, 2]]
 y = x → same memory
 x.append(3) → [[1, 2, 3]]
+
 ✅ Pro Tips
+
 Use immutable types for constants, configs, and security.
 
 Use mutable types for data collections and changes.
@@ -135,10 +125,15 @@ type() – Check data type
 is / == – Identity vs equality
 
 🧠 Summary Table
+
 Property	Mutable	Immutable
+
 Can be modified?	✅ Yes	❌ No
+
 Examples	list, dict, set	int, str, tuple, bool
+
 Memory reuse	❌ No	✅ Yes (interning)
+
 Performance	Slightly slower (mutable ops)	Faster (no need to copy)
 Typical use case	Logs, data change, collections	Configs, IDs, constants
 
