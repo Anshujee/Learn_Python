@@ -1,16 +1,18 @@
 # In this programm we will create a simple calculator that can perform basic arithmetic operations like addition, subtraction, multiplication
 # Using Command Line Interface (CLI)
-import sys
+import sys # import sys module to read command line arguments
 
-def add(a,b):
-    addition = a + b
-    return  addition
-def subtract(a,b):
-    sub = a - b
-    return  sub
-def multiply(a,b):
-    mul = a * b
-    return  mul
+def add(a,b): # function to add two numbers
+    addition = a + b # add the two numbers
+    return  addition # return the result
+
+def subtract(a,b): # function to subtract two numbers
+    sub = a - b # subtract the two numbers
+    return  sub # return the result
+
+def multiply(a,b): # function to multiply two numbers
+    mul = a * b # multiply the two numbers
+    return  mul # return the result
 
 a = float(sys.argv[1]) # first argument is the operation
 opration = sys.argv[2] # second argument is the first number
