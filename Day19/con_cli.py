@@ -1,3 +1,6 @@
+# This is a simple code to learn about conditions in Python 
+# using command line arguments.
+# We will create a simple program that will take an instance type as input
 import sys
 
 instance_type = sys.argv[1]
