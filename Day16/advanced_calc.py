@@ -1,7 +1,7 @@
-# import calc as advance
+import calc as advance
 
 #advance.add()
-# advance.subtract()
+#advance.subtract()
 
 #print ("Addition from advanced calc :", advance.add())
 #print ( " Sub from advanced calc :", advance.subtract())

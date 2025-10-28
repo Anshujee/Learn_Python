@@ -1,5 +1,5 @@
 # We can consider this calc.py file as a module and 
-# import it in another file. Let say advanced_calc.py
+# import it in another file. Let say in advanced_calc.py
 
 a = 10
 b = 5
